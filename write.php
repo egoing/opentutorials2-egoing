@@ -80,7 +80,7 @@ $topic = mysql_fetch_assoc($result);
             }
             .description{
                 width:500px;
-            }                    
+            }
         </style>
     </head>
  
@@ -90,7 +90,6 @@ $topic = mysql_fetch_assoc($result);
                 <h1>JavaScript</h1>
             </header>
             <div id="toolbar">
-                <a href="./write.php">쓰기</a>
                 <input type="button" value="black" onclick="document.getElementById('body').className='black'" />
                 <input type="button" value="white" onclick="document.getElementById('body').className='white'" />
             </div>
@@ -108,10 +107,14 @@ $topic = mysql_fetch_assoc($result);
                 </ul>
             </nav>
             <article>
-                <h2><?=$topic['title']?></h2>
-                <div class="description">
-                    <?=$topic['description']?>
-                </div>
+            	<form action="write_process.php" method="post">
+	                <h2><input type="text" name="title" /></h2>
+	                <div class="description">
+	                	<textarea name="description">
+	                	</textarea>	                    
+	                </div>
+	                <input type="submit" />
+            	</form>
             </article>
         </div>
     </body>
