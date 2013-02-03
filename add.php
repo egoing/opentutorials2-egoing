@@ -108,8 +108,12 @@ $topic = mysql_fetch_assoc($result);
             </nav>
             <article>
             	<form action="write_process.php" method="post">
-	                <h2><input type="text" name="title" /></h2>
+	                <h2>
+                        <label>제목</label>
+                        <input type="text" name="title" />
+                    </h2>
 	                <div class="description">
+                        <label>본문<label>
 	                	<textarea name="description">
 	                	</textarea>	                    
 	                </div>
