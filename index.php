@@ -89,12 +89,12 @@ $topic = mysql_fetch_assoc($result);
             <header>
                 <h1>JavaScript</h1>
             </header>
-            <div id="toolbar">
-                <a href="./write.php">쓰기</a>
+            <div id="toolbar">                
                 <input type="button" value="black" onclick="document.getElementById('body').className='black'" />
                 <input type="button" value="white" onclick="document.getElementById('body').className='white'" />
             </div>
             <nav>
+                <a href="./write.php">토픽추가</a>
                 <ul>
                     <?php
                     $sql="select id,title from topic";
