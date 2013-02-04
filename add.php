@@ -107,7 +107,7 @@ $topic = mysql_fetch_assoc($result);
                 </ul>
             </nav>
             <article>
-            	<form action="write_process.php" method="post">
+            	<form action="add_process.php" method="post">
 	                <h2>
                         <label>제목</label>
                         <input type="text" name="title" />
