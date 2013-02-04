@@ -94,7 +94,7 @@ $topic = mysql_fetch_assoc($result);
                 <input type="button" value="white" onclick="document.getElementById('body').className='white'" />
             </div>
             <nav>
-                <a href="./write.php">토픽추가</a>
+                <a href="./add.php">토픽추가</a>
                 <ul>
                     <?php
                     $sql="select id,title from topic";
