@@ -107,10 +107,16 @@ $topic = mysql_fetch_assoc($result);
                 </ul>
             </nav>
             <article>
+                <?php
+                if(!empty($topic)){
+                ?>
                 <h2><?=$topic['title']?></h2>
                 <div class="description">
                     <?=$topic['description']?>
                 </div>
+                <?php
+                }
+                ?>
             </article>
         </div>
     </body>
